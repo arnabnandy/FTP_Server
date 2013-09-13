@@ -102,9 +102,7 @@ int main()
 			{	recv(connected,fname,sizeof(fname),0);
 					
 				if(fname[0]!='/')
-				{//	printf("heeasd\n");			
-					
-					chdir(fname);
+				{	chdir(fname);
 					printf("New directory: ");			
 					system("pwd");
 					system("ls");				
